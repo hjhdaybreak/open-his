@@ -1,0 +1,77 @@
+Index: his-doctor/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <parent>\n        <artifactId>open-his</artifactId>\n        <groupId>org.bee.openhis</groupId>\n        <version>1.0-SNAPSHOT</version>\n    </parent>\n    <modelVersion>4.0.0</modelVersion>\n\n    <artifactId>his-doctor</artifactId>\n\n    <properties>\n        <maven.compiler.source>8</maven.compiler.source>\n        <maven.compiler.target>8</maven.compiler.target>\n    </properties>\n\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/his-doctor/pom.xml b/his-doctor/pom.xml
+--- a/his-doctor/pom.xml	(revision 3d7ee5b59a2a0a8c5d3e485b9f835360d29f4f70)
++++ b/his-doctor/pom.xml	(date 1673068839891)
+@@ -10,10 +10,24 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <artifactId>his-doctor</artifactId>
++    <packaging>pom</packaging>
++    <modules>
++        <module>doctor-api</module>
++        <module>doctor-domain</module>
++        <module>doctor-mapper</module>
++    </modules>
+ 
+     <properties>
+         <maven.compiler.source>8</maven.compiler.source>
+         <maven.compiler.target>8</maven.compiler.target>
+     </properties>
+ 
++    <dependencies>
++        <dependency>
++            <groupId>org.bee.openhis</groupId>
++            <artifactId>his-commons</artifactId>
++            <version>1.0-SNAPSHOT</version>
++        </dependency>
++    </dependencies>
++
+ </project>
+\ No newline at end of file
+Index: his-commons/src/main/java/com/bee/openhis/domain/SimpleUser.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.bee.openhis.domain;\r\n\r\nimport lombok.AllArgsConstructor;\r\nimport lombok.Data;\r\nimport lombok.NoArgsConstructor;\r\n\r\nimport java.io.Serializable;\r\n\r\n@Data\r\n@AllArgsConstructor\r\n@NoArgsConstructor\r\npublic class SimpleUser implements Serializable {\r\n\r\n    private Serializable userId;\r\n    private String userName;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/his-commons/src/main/java/com/bee/openhis/domain/SimpleUser.java b/his-commons/src/main/java/com/bee/openhis/domain/SimpleUser.java
+--- a/his-commons/src/main/java/com/bee/openhis/domain/SimpleUser.java	(revision 3d7ee5b59a2a0a8c5d3e485b9f835360d29f4f70)
++++ b/his-commons/src/main/java/com/bee/openhis/domain/SimpleUser.java	(date 1673018829757)
+@@ -9,8 +9,10 @@
+ @Data
+ @AllArgsConstructor
+ @NoArgsConstructor
++
+ public class SimpleUser implements Serializable {
+ 
+     private Serializable userId;
++
+     private String userName;
+ }
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n    <packaging>pom</packaging>\n\n    <modules>\n        <module>his-commons</module>\n    </modules>\n\n    <parent>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-parent</artifactId>\n        <version>2.2.6.RELEASE</version>\n        <relativePath/> <!-- lookup parent from repository -->\n    </parent>\n    <description>门诊管理系统</description>\n\n    <properties>\n        <java.version>1.8</java.version>\n        <shiro-boot.version>1.5.3</shiro-boot.version>\n        <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>\n        <fastdfs.version>1.26.7</fastdfs.version>\n        <shiro-redis.version>3.2.3</shiro-redis.version>\n        <fastjson.version>1.2.62</fastjson.version>\n        <hutool.version>5.1.1</hutool.version>\n        <bitwalker.version>1.19</bitwalker.version>\n        <dubbo.version>2.7.5</dubbo.version>\n    </properties>\n\n    <groupId>org.bee.openhis</groupId>\n    <artifactId>open-his</artifactId>\n    <version>1.0-SNAPSHOT</version>\n\n<dependencyManagement>\n    <dependencies>\n        <dependency>\n            <groupId>com.baomidou</groupId>\n            <artifactId>mybatis-plus-boot-starter</artifactId>\n            <version>${mybatis-plus.version}</version>\n        </dependency>\n        <dependency>\n            <groupId>org.apache.shiro</groupId>\n            <artifactId>shiro-spring-boot-web-starter</artifactId>\n            <version>${shiro-boot.version}</version>\n        </dependency>\n        <dependency>\n            <groupId>com.github.tobato</groupId>\n            <artifactId>fastdfs-client</artifactId>\n            <version>${fastdfs.version}</version>\n        </dependency>\n        <dependency>\n            <groupId>org.crazycake</groupId>\n            <artifactId>shiro-redis</artifactId>\n            <version>${shiro-redis.version}</version>\n        </dependency>\n        <!-- fastjson -->\n        <dependency>\n            <groupId>com.alibaba</groupId>\n            <artifactId>fastjson</artifactId>\n            <version>${fastjson.version}</version>\n        </dependency>\n        <dependency>\n            <groupId>cn.hutool</groupId>\n            <artifactId>hutool-all</artifactId>\n            <version>${hutool.version}</version>\n        </dependency>\n        <!-- 解析客户端操作系统、浏览器等 -->\n        <dependency>\n            <groupId>eu.bitwalker</groupId>\n            <artifactId>UserAgentUtils</artifactId>\n            <version>${bitwalker.version}</version>\n        </dependency>\n        <!--dubbo-->\n        <dependency>\n            <groupId>org.apache.dubbo</groupId>\n            <artifactId>dubbo-spring-boot-starter</artifactId>\n            <version>${dubbo.version}</version>\n        </dependency>\n    </dependencies>\n</dependencyManagement>\n\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 3d7ee5b59a2a0a8c5d3e485b9f835360d29f4f70)
++++ b/pom.xml	(date 1673068706554)
+@@ -7,6 +7,9 @@
+ 
+     <modules>
+         <module>his-commons</module>
++        <module>config-server</module>
++        <module>his-doctor</module>
++        <module>doctor-service</module>
+     </modules>
+ 
+     <parent>
