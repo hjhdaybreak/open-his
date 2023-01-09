@@ -7,16 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
-        <module name="erp-mapper" />
-        <module name="erp-service" />
+        <module name="system-domain" />
+        <module name="system-api" />
+        <module name="statistics-service" />
+        <module name="system-service" />
         <module name="doctor-api" />
-        <module name="doctor-service" />
-        <module name="doctor-domain" />
+        <module name="system-mapper" />
         <module name="erp-domain" />
         <module name="doctor-mapper" />
+        <module name="sms-domain" />
         <module name="his-commons" />
         <module name="erp-api" />
+        <module name="statistics-api" />
+        <module name="config-server" />
+        <module name="erp-mapper" />
+        <module name="sms-api" />
+        <module name="statistics-domain" />
+        <module name="erp-service" />
+        <module name="sms-service" />
+        <module name="system-web" />
+        <module name="doctor-service" />
+        <module name="doctor-domain" />
+        <module name="sms-mapper" />
+        <module name="statistics-mapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,7 +49,23 @@
       <module name="erp-service" options="-parameters" />
       <module name="his-commons" options="-parameters" />
       <module name="his-doctor" options="-parameters" />
+      <module name="his-sms" options="-parameters" />
+      <module name="his-statistics" options="-parameters" />
+      <module name="his-system" options="-parameters" />
       <module name="open-his" options="-parameters" />
+      <module name="sms-api" options="-parameters" />
+      <module name="sms-domain" options="-parameters" />
+      <module name="sms-mapper" options="-parameters" />
+      <module name="sms-service" options="-parameters" />
+      <module name="statistics-api" options="-parameters" />
+      <module name="statistics-domain" options="-parameters" />
+      <module name="statistics-mapper" options="-parameters" />
+      <module name="statistics-service" options="-parameters" />
+      <module name="system-api" options="-parameters" />
+      <module name="system-domain" options="-parameters" />
+      <module name="system-mapper" options="-parameters" />
+      <module name="system-service" options="-parameters" />
+      <module name="system-web" options="-parameters" />
     </option>
   </component>
 </project>

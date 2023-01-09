@@ -9,20 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>his-doctor</artifactId>
+    <artifactId>his-statistics</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>doctor-api</module>
-        <module>doctor-domain</module>
-        <module>doctor-mapper</module>
-        <module>doctor-service</module>
-        <module>his-sms</module>
+        <module>statistics-api</module>
+        <module>statistics-domain</module>
+        <module>statistics-mapper</module>
+        <module>statistics-service</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.bee.openhis</groupId>

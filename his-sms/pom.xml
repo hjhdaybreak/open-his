@@ -9,14 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>his-doctor</artifactId>
+    <artifactId>his-sms</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>doctor-api</module>
-        <module>doctor-domain</module>
-        <module>doctor-mapper</module>
-        <module>doctor-service</module>
-        <module>his-sms</module>
+        <module>sms-mapper</module>
+        <module>sms-api</module>
+        <module>sms-domain</module>
+        <module>sms-service</module>
     </modules>
 
     <properties>
