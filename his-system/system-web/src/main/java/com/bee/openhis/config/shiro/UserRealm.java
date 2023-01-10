@@ -43,16 +43,15 @@ public class UserRealm extends AuthorizingRealm {
         //得到用户登陆名
         String phone = token.getPrincipal().toString();
         //根据电话查询用户是否存在
-//        User user = userService.queryUserByPhone(phone);
-        User user = new User();
+        User user = userService.queryUserByPhone(phone);
+
         if (null != user) {//说明用户存在，但是密码可能不正确
-            //组装存放到reids里面的对象
+            //组装存放到 redis 里面的对象
             ActiverUser activerUser = new ActiverUser();
             activerUser.setUser(user);
             //匹配密码
-            SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(
+            return new SimpleAuthenticationInfo(
                     activerUser, user.getPassword(), ByteSource.Util.bytes(user.getSalt()), this.getName());
-            return info;
         } else {
             return null;//代表用户不存在
         }

@@ -14,4 +14,6 @@ public class MenuTreeVo {
     private String id;
 
     private String serPath;//菜单表里面的url
+
+    private boolean show = true; //是否显示
 }

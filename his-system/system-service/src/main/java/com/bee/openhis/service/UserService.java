@@ -10,4 +10,5 @@ import com.bee.openhis.domain.User;
  */
 public interface UserService extends IService<User> {
 
+    User queryUserByPhone(String phone);
 }

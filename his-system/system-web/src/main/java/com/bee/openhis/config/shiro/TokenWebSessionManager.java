@@ -16,7 +16,7 @@ import java.util.UUID;
 /**
  * @Author:
  * @Description 生成 toke
- * * 如果没有 token生成一个返回到前台
+ * * 如果没有 token生成一个返回到前台 (会使用 Redis 进行保存,避免重复)
  * * 如果有就从请求头里面取出来
  */
 @Configuration

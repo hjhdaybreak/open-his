@@ -181,4 +181,58 @@ public class User extends BaseEntity implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+
+    public static final String COL_USER_ID = "user_id";
+
+    public static final String COL_DEPT_ID = "dept_id";
+
+    public static final String COL_USER_NAME = "user_name";
+
+    public static final String COL_USER_TYPE = "user_type";
+
+    public static final String COL_SEX = "sex";
+
+    public static final String COL_AGE = "age";
+
+    public static final String COL_PICTURE = "picture";
+
+    public static final String COL_BACKGROUND = "background";
+
+    public static final String COL_PHONE = "phone";
+
+    public static final String COL_EMAIL = "email";
+
+    public static final String COL_STRONG = "strong";
+
+    public static final String COL_HONOR = "honor";
+
+    public static final String COL_INTRODUCTION = "introduction";
+
+    public static final String COL_USER_RANK = "user_rank";
+
+    public static final String COL_PASSWORD = "password";
+
+    public static final String COL_LAST_LOGIN_TIME = "last_login_time";
+
+    public static final String COL_LAST_LOGIN_IP = "last_login_ip";
+
+    public static final String COL_STATUS = "status";
+
+    public static final String COL_UNION_ID = "union_id";
+
+    public static final String COL_OPEN_ID = "open_id";
+
+    public static final String COL_CREATE_TIME = "create_time";
+
+    public static final String COL_UPDATE_TIME = "update_time";
+
+    public static final String COL_CREATE_BY = "create_by";
+
+    public static final String COL_UPDATE_BY = "update_by";
+
+    public static final String COL_SALT = "salt";
+
+    public static final String COL_SCHEDULING_FLAG = "scheduling_flag";
+
 }
