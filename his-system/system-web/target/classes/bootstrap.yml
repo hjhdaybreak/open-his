@@ -46,15 +46,15 @@ spring:
     name: bee-system-web-service
 
 
-##shiro配置
-#shiro:
-#  anon-urls:
-#    - /login/doLogin*
-#    - /login/logout*
-#    - /pay/callback/**
-#  authc-urls:
-#    - /**
-#mybatisplus的配置
+#shiro配置
+shiro:
+  anon-urls:
+    - /login/doLogin*
+    - /login/logout*
+    - /pay/callback/**
+  authc-urls:
+    - /**
+#  mybatisplus的配置
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

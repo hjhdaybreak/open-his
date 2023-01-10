@@ -5,34 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/his-sms/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-sms/sms-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-sms/sms-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-sms/sms-mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-sms/sms-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-sms/sms-service/src/main/java/com/bee/openhis/SmsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/java/com/bee/openhis/StatisticsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/SystemApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/com/bee/openhis/ConfigServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/config/common-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-sms/sms-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/target/classes/com/bee/openhis/DoctorApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-doctor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/ShiroAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/ShiroLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/ShiroProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/TokenWebSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/UserRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/vo/ActiverUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -87,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-system/system-service/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-system/system-mapper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -97,20 +87,22 @@
     <property name="project.structure.proportion" value="0.23555556" />
     <property name="project.structure.side.proportion" value="0.225058" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\open-his\his-system\system-mapper" />
+      <recent name="G:\open-his\his-system\system-mapper\src\main\resources\mapper" />
       <recent name="G:\open-his\his-system\system-service\src\main\java" />
       <recent name="G:\open-his\his-system\system-mapper\src\main\resources" />
       <recent name="G:\open-his\his-system\system-mapper\src\main\java" />
-      <recent name="G:\open-his\his-statistics\statistics-service\src\main\resources" />
-      <recent name="G:\open-his\his-statistics\statistics-api\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bee.openhis.service" />
+      <recent name="com.bee.openhis.service.impl" />
+      <recent name="com.bee.openhis.mapper" />
+      <recent name="com.bee.openhis.domain" />
       <recent name="com.bee.openhis" />
-      <recent name="com.bee.openhis.utils" />
-      <recent name="com.bee.openhis.constants" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -202,9 +194,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SystemApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.StatisticsApplication" />
         <item itemvalue="Spring Boot.SmsApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.DoctorApplication" />
       </list>
     </recent_temporary>
@@ -238,6 +230,9 @@
       <workItem from="1673164155532" duration="3654000" />
       <workItem from="1673168664111" duration="5300000" />
       <workItem from="1673182087818" duration="8511000" />
+      <workItem from="1673232605990" duration="514000" />
+      <workItem from="1673233149529" duration="7097000" />
+      <workItem from="1673251855785" duration="15000" />
     </task>
     <servers />
   </component>
