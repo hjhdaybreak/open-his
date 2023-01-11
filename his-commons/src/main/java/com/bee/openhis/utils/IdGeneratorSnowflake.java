@@ -33,6 +33,7 @@ public class IdGeneratorSnowflake {
      *
      * @return
      */
+
     public static Integer generateVerificationCode() {
         Random random = new Random();
         int randomNumber = random.nextInt(9000) + 1000;

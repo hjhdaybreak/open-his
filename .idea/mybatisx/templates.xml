@@ -13,7 +13,7 @@
             <option name="extraClassSuffix" value="" />
             <option name="ignoreFieldPrefix" value="" />
             <option name="ignoreFieldSuffix" value="" />
-            <option name="ignoreTablePrefix" value="sys_" />
+            <option name="ignoreTablePrefix" value="sys_,his_" />
             <option name="ignoreTableSuffix" value="" />
             <option name="moduleName" value="his-system" />
             <option name="modulePath" value="$PROJECT_DIR$/his-system" />
@@ -68,14 +68,13 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="Dept" />
-                  <option name="tableName" value="sys_dept" />
+                  <option name="className" value="VerificationCode" />
+                  <option name="tableName" value="his_verification_code" />
                 </TableUIInfo>
               </list>
             </option>
             <option name="templatesName" value="mybatis-plus3" />
             <option name="useActualColumnAnnotationInject" value="true" />
-            <option name="useActualColumns" value="true" />
             <option name="useLombokPlugin" value="true" />
           </GenerateConfig>
         </option>
