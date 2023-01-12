@@ -1,11 +1,10 @@
-package com.bee.openhis.controller;
+package com.bee.openhis.controller.system;
 
 import com.bee.openhis.config.vo.ActiverUser;
 import com.bee.openhis.constants.Constants;
 import com.bee.openhis.constants.HttpStatus;
 import com.bee.openhis.domain.Menu;
 import com.bee.openhis.dto.LoginBodyDto;
-import com.bee.openhis.service.LoginInfoService;
 import com.bee.openhis.service.MenuService;
 import com.bee.openhis.vo.AjaxResult;
 import com.bee.openhis.vo.MenuTreeVo;
@@ -31,8 +30,7 @@ public class LoginController {
     private MenuService menuService;
 
 
-    @Autowired
-    private LoginInfoService loginInfoService;
+
 
     @PostMapping("login/doLogin")
     public AjaxResult login(@RequestBody @Validated LoginBodyDto loginBodyDto, HttpServletRequest httpServletRequest) {
