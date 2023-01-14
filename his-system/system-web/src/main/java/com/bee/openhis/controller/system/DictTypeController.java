@@ -28,4 +28,10 @@ public class DictTypeController {
         return AjaxResult.success("查询成功", dataGridView.getData(), dataGridView.getTotal());
     }
 
+    @GetMapping("dictCacheAsync")
+    public AjaxResult dictCacheAsync() {
+        dictTypeService.dictCacheAsync();
+        return AjaxResult.success();
+    }
+
 }

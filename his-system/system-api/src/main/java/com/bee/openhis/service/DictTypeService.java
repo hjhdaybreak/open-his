@@ -13,4 +13,7 @@ import com.bee.openhis.vo.DataGridView;
 public interface DictTypeService extends IService<DictType> {
 
     DataGridView listForPage(DictTypeDto dictTypeDto);
+
+    void dictCacheAsync();
+
 }

@@ -1,5 +1,7 @@
 package com.bee.openhis.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -9,8 +11,12 @@ import com.bee.openhis.mapper.DictDataMapper;
 import com.bee.openhis.service.DictDataService;
 import com.bee.openhis.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author 19235
@@ -38,6 +44,38 @@ public class DictDataServiceImpl extends ServiceImpl<DictDataMapper, DictData>
 
         dictDataMapper.selectPage(page, wrapper);
         return new DataGridView(page.getTotal(), page.getRecords());
+    }
+
+    @Override
+    public DictData selectDictDataById(Long dictId) {
+        return dictDataMapper.selectById(dictId);
+    }
+
+    @Override
+    public int insert(DictDataDto dictDataDto) {
+        DictData dictData = new DictData();
+        BeanUtils.copyProperties(dictDataDto, dictData);
+        dictData.setCreateBy(dictDataDto.getSimpleUser().getUserName());
+        dictData.setCreateTime(DateUtil.date());
+        return dictDataMapper.insert(dictData);
+    }
+
+    @Override
+    public int update(DictDataDto dictDataDto) {
+        DictData dictData = new DictData();
+        BeanUtil.copyProperties(dictDataDto, dictData);
+        dictData.setUpdateBy(dictDataDto.getSimpleUser().getUserName());
+        return dictDataMapper.updateById(dictData);
+    }
+
+    @Override
+    public int deleteDictData(Long[] dictIds) {
+        List<Long> ids = Arrays.asList(dictIds);
+        if (ids.size() > 0) {
+            return dictDataMapper.deleteBatchIds(ids);
+        } else {
+            return 0;
+        }
     }
 }
 

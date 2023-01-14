@@ -1,6 +1,5 @@
 package com.bee.openhis.constants;
 
-
 /**
  * 系统使用的常量
  */
@@ -20,7 +19,6 @@ public interface Constants {
      */
     String STATUS_TRUE = "0";
     String STATUS_FALSE = "1";
-
 
     /**
      * 删除状态
@@ -43,7 +41,6 @@ public interface Constants {
     String STOCK_PURCHASE_STATUS_5 = "5";
     String STOCK_PURCHASE_STATUS_6 = "6";
 
-
     /**
      * 排班状态
      */
@@ -64,7 +61,7 @@ public interface Constants {
     String REG_STATUS_4 = "4"; //已退号
     String REG_STATUS_5 = "5"; //已作废
     /**
-     * 处方类型
+     * 处方类型0检查处方 1--药品处方
      */
     String CO_TYPE_MEDICINES = "0";
     String CO_TYPE_CHECK = "1";
@@ -83,11 +80,10 @@ public interface Constants {
     String ORDER_DETAILS_STATUS_2 = "2";
     String ORDER_DETAILS_STATUS_3 = "3";
     /**
-     * 检查状态  0 检查中  1检查完成
+     * 检查状态  0 检查中   1检查完成
      */
     String RESULT_STATUS_0 = "0";
     String RESULT_STATUS_1 = "1";
-
 
     /**
      * 退费单状态，订单状态0未退费  1 退费成功 2退费失败
@@ -101,34 +97,30 @@ public interface Constants {
     String PAY_TYPE_0 = "0";//现金
     String PAY_TYPE_1 = "1";//支付宝
 
-
     /**
      * redis的字典前缀
      */
-    String DICT_REDIS_PROFIX = "dict:";
-
+    String DICT_REDIS_PREFIX="dict:";
 
     /**
      * 登陆状态  0 成功  1失败
      */
     String LOGIN_SUCCESS = "0";
     String LOGIN_ERROR = "1";
-
-
     /**
      * 登陆类型0系统用户1患者用户
      */
-    String LOGIN_TYPE_SYSTEM = "0";
-    String LOGIN_TYPE_PATIENT = "1";
+    String LOGIN_TYPE_SYSTEM = "0" ;
+    String LOGIN_TYPE_PATIENT = "1" ;
 
 
     /**
      * ID前缀
      */
-    String ID_PROFIX_CG = "CG";  //采购订单表
-    String ID_PROFIX_HZ = "HZ";  //患者表
-    String ID_PROFIX_GH = "GH";  //挂号表
-    String ID_PROFIX_CH = "CH";   //病历表
+    String ID_PROFIX_CG="CG";   //采购订单表
+    String ID_PROFIX_HZ="HZ";   //患者表
+    String ID_PROFIX_GH="GH";   //挂号表
+    String ID_PROFIX_CH = "CH";     //病历表
     String ID_PROFIX_CO = "CO"; //处方表
     String ID_PROFIX_ITEM = "ITEM"; //处方详情表
     String ID_PROFIX_ODC = "ODC"; //收费订单

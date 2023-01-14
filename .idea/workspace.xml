@@ -5,35 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/domain/DictData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/domain/DictType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/DictDataDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/DictTypeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/DictDataMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/DictTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/DictDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/DictTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/config/common-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/config/common-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/config/common-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/config/common-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/LoginInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/LoginInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/LoginInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/LoginInfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/MenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/LoginInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/LoginInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/SystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/SystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/LoginController.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/utils/ShiroSecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictTypeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictDataServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictDataServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DictTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/DictDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/DictDataServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/DictDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/DictDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/DictDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/DictDataController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,11 +97,11 @@
       <recent name="G:\open-his\his-system\system-domain\src\main\java\com\bee\openhis\domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bee.openhis.utils" />
       <recent name="com.bee.openhis.dto" />
       <recent name="com.bee.openhis.service" />
       <recent name="com.bee.openhis.mapper" />
       <recent name="com.bee.openhis.domain" />
-      <recent name="com.bee.openhis.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -256,7 +240,10 @@
       <workItem from="1673405768204" duration="13994000" />
       <workItem from="1673432254108" duration="2070000" />
       <workItem from="1673452685919" duration="1115000" />
-      <workItem from="1673529479565" duration="5695000" />
+      <workItem from="1673529479565" duration="6017000" />
+      <workItem from="1673577203904" duration="3516000" />
+      <workItem from="1673602695116" duration="4402000" />
+      <workItem from="1673678784573" duration="1992000" />
     </task>
     <servers />
   </component>
@@ -292,17 +279,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/config/shiro/TokenWebSessionManager.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

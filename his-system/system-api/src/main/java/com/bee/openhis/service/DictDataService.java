@@ -14,4 +14,11 @@ public interface DictDataService extends IService<DictData> {
 
     DataGridView listForPage(DictDataDto dictDataDto);
 
+    DictData selectDictDataById(Long dictId);
+
+    int insert(DictDataDto dictDataDto);
+
+    int update(DictDataDto dictDataDto);
+
+    int deleteDictData(Long[] dictIds);
 }

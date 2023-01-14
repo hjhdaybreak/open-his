@@ -43,7 +43,8 @@ public class LoginController {
 
         try {
             currentUser.login(token);
-            //封装loginInfo对象 todo
+
+            //封装 loginInfo对象 todo
             Serializable id = currentUser.getSession().getId();
 
         } catch (AuthenticationException e) {
