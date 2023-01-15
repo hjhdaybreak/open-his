@@ -68,12 +68,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="DictData" />
-                  <option name="tableName" value="sys_dict_data" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="DictType" />
-                  <option name="tableName" value="sys_dict_type" />
+                  <option name="className" value="OperLog" />
+                  <option name="tableName" value="sys_oper_log" />
                 </TableUIInfo>
               </list>
             </option>

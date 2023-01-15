@@ -1,13 +1,22 @@
 package com.bee.openhis.controller.system;
 
+import cn.hutool.core.date.DateUtil;
+import com.bee.openhis.aspectj.Log;
+import com.bee.openhis.aspectj.enums.BusinessType;
 import com.bee.openhis.config.vo.ActiverUser;
 import com.bee.openhis.constants.Constants;
 import com.bee.openhis.constants.HttpStatus;
+import com.bee.openhis.domain.LoginInfo;
 import com.bee.openhis.domain.Menu;
 import com.bee.openhis.dto.LoginBodyDto;
+import com.bee.openhis.service.LoginInfoService;
 import com.bee.openhis.service.MenuService;
+import com.bee.openhis.utils.AddressUtils;
+import com.bee.openhis.utils.IpUtils;
+import com.bee.openhis.utils.ShiroSecurityUtils;
 import com.bee.openhis.vo.AjaxResult;
 import com.bee.openhis.vo.MenuTreeVo;
+import eu.bitwalker.useragentutils.UserAgent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -29,10 +38,12 @@ public class LoginController {
     @Autowired
     private MenuService menuService;
 
-
-
+    @Autowired
+    private LoginInfoService loginInfoService;
 
     @PostMapping("login/doLogin")
+    @Log(title = "用户登录", businessType = BusinessType.INSERT)
+
     public AjaxResult login(@RequestBody @Validated LoginBodyDto loginBodyDto, HttpServletRequest httpServletRequest) {
         AjaxResult ajaxResult = AjaxResult.success();
         String username = loginBodyDto.getUsername();
@@ -41,17 +52,49 @@ public class LoginController {
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
         Subject currentUser = SecurityUtils.getSubject();
 
-        try {
-            currentUser.login(token);
+        LoginInfo loginInfo = createLoginInfo(httpServletRequest);
+        loginInfo.setLoginAccount(loginBodyDto.getUsername());
 
-            //封装 loginInfo对象 todo
-            Serializable id = currentUser.getSession().getId();
+        try {
+
+            currentUser.login(token);
+            Serializable webToken = currentUser.getSession().getId();
+            ajaxResult.put(Constants.TOKEN, webToken);
+            loginInfo.setMsg("登录成功");
+            loginInfo.setLoginStatus(Constants.LOGIN_SUCCESS);
+            loginInfo.setUserName(ShiroSecurityUtils.getCurrentSimpleUser().getUserName());
 
         } catch (AuthenticationException e) {
-            log.error("username or secrete error");
-            ajaxResult = AjaxResult.error(HttpStatus.ERROR, "username or secrete error");
+            log.error("用户名或密码不正确");
+            ajaxResult = AjaxResult.error(HttpStatus.ERROR, "用户名或密码不正确");
+            loginInfo.setMsg("用户名或密码不正确");
+            loginInfo.setLoginStatus(Constants.LOGIN_ERROR);
         }
+        //保存登录信息到数据库
+        loginInfoService.insertLoginInfo(loginInfo);
+
         return ajaxResult;
+    }
+
+    private LoginInfo createLoginInfo(HttpServletRequest httpServletRequest) {
+        LoginInfo loginInfo = new LoginInfo();
+        UserAgent userAgent = UserAgent.parseUserAgentString(httpServletRequest.getHeader("User-Agent"));
+        //获取IP地址
+        String ipAddr = IpUtils.getIpAddr(httpServletRequest);
+        //获取操作系统
+        String osName = userAgent.getOperatingSystem().getName();
+        //获取浏览器类型
+        String browser = userAgent.getBrowser().getName();
+        //获取登录地址
+        String location = AddressUtils.getRealAddressByIP(ipAddr);
+
+        loginInfo.setIpAddr(ipAddr);
+        loginInfo.setLoginLocation(location);
+        loginInfo.setOs(osName);
+        loginInfo.setBrowser(browser);
+        loginInfo.setLoginTime(DateUtil.date());
+        loginInfo.setLoginType(Constants.LOGIN_TYPE_SYSTEM);
+        return loginInfo;
     }
 
     @GetMapping("login/getInfo")
