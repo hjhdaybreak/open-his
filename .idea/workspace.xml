@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DictDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/OperLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/OperLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DictDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/bee/openhis/mapper/DictDataMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/bee/openhis/mapper/DictDataMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/OperLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/OperLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/aspectj/OperLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/aspectj/OperLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/domain/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/DeptDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/DeptController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -90,17 +88,17 @@
       <recent name="com.bee.openhis.aspectj" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\open-his\his-system\system-mapper\src\main\resources\mapper" />
       <recent name="G:\open-his\his-commons\src\main\java\com\bee\openhis" />
       <recent name="G:\open-his\his-commons\src\main\java\com\bee\openhis\aspectj" />
-      <recent name="G:\open-his\his-system\system-mapper\src\main\resources\mapper" />
       <recent name="G:\open-his\his-system\system-api\src\main\java\com\bee\openhis\service" />
       <recent name="G:\open-his\his-system\system-service\src\main\java\com\bee\openhis\service\impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bee.openhis.utils" />
-      <recent name="com.bee.openhis.aspectj" />
-      <recent name="com.bee.openhis.mapper" />
       <recent name="com.bee.openhis.dto" />
+      <recent name="com.bee.openhis.service.impl" />
+      <recent name="com.bee.openhis.mapper" />
+      <recent name="com.bee.openhis.domain" />
       <recent name="com.bee.openhis.service" />
     </key>
   </component>
@@ -246,7 +244,7 @@
       <workItem from="1673678784573" duration="17784000" />
       <workItem from="1673752072211" duration="14099000" />
       <workItem from="1673796599834" duration="1853000" />
-      <workItem from="1673847224159" duration="3316000" />
+      <workItem from="1673847224159" duration="6258000" />
     </task>
     <servers />
   </component>
