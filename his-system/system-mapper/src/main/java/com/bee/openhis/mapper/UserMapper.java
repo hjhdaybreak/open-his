@@ -2,6 +2,7 @@ package com.bee.openhis.mapper;
 
 import com.bee.openhis.domain.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
 * @author 19235
@@ -9,6 +10,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-01-09 11:05:21
 * @Entity com.bee.openhis.domain.User
 */
+
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }
