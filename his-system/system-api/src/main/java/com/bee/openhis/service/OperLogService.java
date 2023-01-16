@@ -18,4 +18,6 @@ public interface OperLogService extends IService<OperLog> {
     int deleteOperLogByIds(Long[] infoIds);
 
     int clearAllOperLog();
+
+    int insertOperLog(OperLog operLog);
 }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 * @createDate 2023-01-12 21:29:43
 * @Entity com.bee.openhis.domain.DictData
 */
-@Repository
+
 public interface DictDataMapper extends BaseMapper<DictData> {
 
 }

@@ -43,7 +43,6 @@ public class LoginController {
 
     @PostMapping("login/doLogin")
     @Log(title = "用户登录", businessType = BusinessType.INSERT)
-
     public AjaxResult login(@RequestBody @Validated LoginBodyDto loginBodyDto, HttpServletRequest httpServletRequest) {
         AjaxResult ajaxResult = AjaxResult.success();
         String username = loginBodyDto.getUsername();
