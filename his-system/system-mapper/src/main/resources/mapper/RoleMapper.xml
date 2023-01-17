@@ -58,6 +58,15 @@
         </where>
     </delete>
 
+    <delete id="deleteRoleMenuByMenuIds">
+        delete from sys_role_menu
+        <where>
+            <foreach collection="ids" open="menu_id in(" separator="," close=")" item="sn">
+                #{sn}
+            </foreach>
+        </where>
+    </delete>
+
     <select id="selectRoleIdsByUserId" resultType="java.lang.Long">
         select role_id
         from sys_role_user

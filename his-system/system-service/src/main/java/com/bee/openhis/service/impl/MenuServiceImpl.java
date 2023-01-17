@@ -1,14 +1,20 @@
 package com.bee.openhis.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.bee.openhis.constants.Constants;
 import com.bee.openhis.domain.Menu;
+import com.bee.openhis.dto.MenuDto;
 import com.bee.openhis.mapper.MenuMapper;
+import com.bee.openhis.mapper.RoleMapper;
 import com.bee.openhis.service.MenuService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,6 +30,9 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu>
     private MenuMapper menuMapper;
 
 
+    @Autowired
+    private RoleMapper roleMapper;
+
     @Override
     public List<Menu> selectMenuTree(boolean isAdmin) {
         QueryWrapper<Menu> wrapper = new QueryWrapper<>();
@@ -36,6 +45,61 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu>
             return menuMapper.selectList(wrapper);
         }
     }
+
+    @Override
+    public List<Menu> listAllMenus(MenuDto menuDto) {
+        QueryWrapper<Menu> wrapper = new QueryWrapper<>();
+        wrapper.like(StringUtils.isNotBlank(menuDto.getMenuName()), Menu.COL_MENU_NAME,
+                menuDto.getMenuName());
+        wrapper.eq(StringUtils.isNotBlank(menuDto.getStatus()), Menu.COL_STATUS,
+                menuDto.getStatus());
+        return menuMapper.selectList(wrapper);
+    }
+
+    @Override
+    public List<Long> getMenuIdsByRoleId(Long roleId) {
+        return menuMapper.queryMenuIdsByRoleId(roleId);
+    }
+
+
+    @Override
+    public Menu getOne(Long menuId) {
+        return menuMapper.selectById(menuId);
+    }
+
+
+    @Override
+    public int addMenu(MenuDto menuDto) {
+        Menu menu = new Menu();
+        BeanUtil.copyProperties(menuDto, menu);
+        menu.setCreateBy(menuDto.getSimpleUser().getUserName());
+        menu.setCreateTime(DateUtil.date());
+        return menuMapper.insert(menu);
+    }
+
+    @Override
+    public int updateMenu(MenuDto menuDto) {
+        Menu menu = new Menu();
+        BeanUtil.copyProperties(menuDto, menu);
+        menu.setUpdateBy(menuDto.getSimpleUser().getUserName());
+        return menuMapper.updateById(menu);
+    }
+
+    @Override
+    public boolean hasChildByMenuId(Long menuId) {
+        Long count = menuMapper.queryChildCountByMenuId(menuId);
+        return count > 0;
+    }
+
+    @Override
+    public int deleteMenuById(Long menuId) {
+        //删除sys_role_menu表中的数据
+        roleMapper.deleteRoleMenuByMenuIds(Arrays.asList(menuId));
+        //删除sys_menu表中的数据
+        return menuMapper.deleteById(menuId);
+    }
+
+
 }
 
 
