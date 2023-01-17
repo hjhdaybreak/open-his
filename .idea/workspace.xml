@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/utils/AppMd5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/domain/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/bee/openhis/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/bee/openhis/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/bee/openhis/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/system/RoleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +243,8 @@
       <workItem from="1673752072211" duration="14099000" />
       <workItem from="1673796599834" duration="1853000" />
       <workItem from="1673847224159" duration="11979000" />
-      <workItem from="1673863319337" duration="8913000" />
+      <workItem from="1673863319337" duration="9018000" />
+      <workItem from="1673942964123" duration="2801000" />
     </task>
     <servers />
   </component>

@@ -19,4 +19,17 @@ public interface RoleService extends IService<Role> {
     List<Role> listAllRoles();
 
     List<Long> getRoleIdsByUserId(Long userId);
+
+    DataGridView listRoleForPage(RoleDto roleDto);
+
+    int addRole(RoleDto roleDto);
+
+    int updateRole(RoleDto roleDto);
+
+    Role getOne(Long roleId);
+
+    int deleteRoleByIds(Long[] roleIds);
+
+    void saveRoleMenu(Long roleId, Long[] menuIds);
+
 }
