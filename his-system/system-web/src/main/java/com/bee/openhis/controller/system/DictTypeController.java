@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * * 5. 字典管理
+ */
 @RestController
 @RequestMapping("system/dict/type")
 public class DictTypeController {

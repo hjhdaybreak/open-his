@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotEmpty;
 
-
+/**
+ * 1
+ */
 @RestController
 @RequestMapping("system/dept")
 public class DeptController {
@@ -58,7 +60,7 @@ public class DeptController {
     }
 
     /**
-     * 批量删除部门
+     * 批量删除科室
      *
      * @param deptIds
      * @return

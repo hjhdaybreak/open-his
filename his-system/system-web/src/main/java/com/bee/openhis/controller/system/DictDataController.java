@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+/**
+ * 5. 字典管理
+ */
 @RestController
 @RequestMapping("system/dict/data")
 public class DictDataController {

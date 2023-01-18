@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * 操作日志 controller
+ * 8. 操作日志管理 controller
  */
 @RestController
-@RequestMapping("system/operaLog")
+@RequestMapping("system/operLog")
 public class OperLogController {
 
     @Autowired

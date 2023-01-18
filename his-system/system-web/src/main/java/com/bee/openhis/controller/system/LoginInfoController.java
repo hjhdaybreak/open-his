@@ -7,6 +7,9 @@ import com.bee.openhis.vo.DataGridView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 7. 登录日志管理
+ */
 @RestController
 @RequestMapping("system/loginInfo")
 public class LoginInfoController {

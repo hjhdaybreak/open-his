@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+/**
+ * 6.通告管理
+ */
 @RestController
 @RequestMapping("system/notice")
 public class NoticeController {
