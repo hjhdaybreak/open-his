@@ -100,7 +100,7 @@ public interface Constants {
     /**
      * redis的字典前缀
      */
-    String DICT_REDIS_PREFIX="dict:";
+    String DICT_REDIS_PREFIX = "dict:";
 
     /**
      * 登陆状态  0 成功  1失败
@@ -110,16 +110,16 @@ public interface Constants {
     /**
      * 登陆类型0系统用户1患者用户
      */
-    String LOGIN_TYPE_SYSTEM = "0" ;
-    String LOGIN_TYPE_PATIENT = "1" ;
+    String LOGIN_TYPE_SYSTEM = "0";
+    String LOGIN_TYPE_PATIENT = "1";
 
 
     /**
      * ID前缀
      */
-    String ID_PROFIX_CG="CG";   //采购订单表
-    String ID_PROFIX_HZ="HZ";   //患者表
-    String ID_PROFIX_GH="GH";   //挂号表
+    String ID_PROFIX_CG = "CG";   //采购订单表
+    String ID_PROFIX_HZ = "HZ";   //患者表
+    String ID_PROFIX_GH = "GH";   //挂号表
     String ID_PROFIX_CH = "CH";     //病历表
     String ID_PROFIX_CO = "CO"; //处方表
     String ID_PROFIX_ITEM = "ITEM"; //处方详情表
