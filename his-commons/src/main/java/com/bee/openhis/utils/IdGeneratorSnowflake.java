@@ -52,8 +52,8 @@ public class IdGeneratorSnowflake {
     /**
      * 根据前缀前成ID
      */
-    public static String generatorIdWithPrefix(String profix) {
-        return profix + snowflakeId();
+    public static String generatorIdWithPrefix(String prefix) {
+        return prefix + snowflakeId();
     }
 
 

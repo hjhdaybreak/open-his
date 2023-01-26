@@ -102,4 +102,31 @@ public class Purchase extends BaseEntity implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+
+    public static final String COL_PURCHASE_ID = "purchase_id";
+
+    public static final String COL_PROVIDER_ID = "provider_id";
+
+    public static final String COL_PURCHASE_TRADE_TOTAL_AMOUNT = "purchase_trade_total_amount";
+
+    public static final String COL_STATUS = "status";
+
+    public static final String COL_APPLY_USER_ID = "apply_user_id";
+
+    public static final String COL_APPLY_USER_NAME = "apply_user_name";
+
+    public static final String COL_STORAGE_OPT_USER = "storage_opt_user";
+
+    public static final String COL_STORAGE_OPT_TIME = "storage_opt_time";
+
+    public static final String COL_AUDIT_MSG = "audit_msg";
+
+    public static final String COL_CREATE_TIME = "create_time";
+
+    public static final String COL_UPDATE_TIME = "update_time";
+
+    public static final String COL_CREATE_BY = "create_by";
+
+    public static final String COL_UPDATE_BY = "update_by";
 }

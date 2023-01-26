@@ -5,46 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/InventoryLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/MedicinesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/ProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/ProviderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/PurchaseItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/PurchaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/InventoryLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Medicines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/PurchaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/MedicinesDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/ProducerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/ProviderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/InventoryLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/MedicinesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/ProducerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/ProviderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/PurchaseItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/bee/openhis/mapper/PurchaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/InventoryLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/MedicinesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/ProducerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/ProviderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/PurchaseItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/PurchaseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/InventoryLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/MedicinesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProducerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProviderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/PurchaseItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/PurchaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/bee/openhis/dto/ProducerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/MedcinesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProducerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProviderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/InventoryLogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/PurchaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/PurchaseFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/dto/PurchaseItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/InventoryLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/PurchaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/config/common-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/config/common-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/config/common-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/config/common-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/CheckItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/CheckItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/RegisteredItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/system/RegisteredItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/utils/IdGeneratorSnowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/utils/IdGeneratorSnowflake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/bee/openhis/utils/IdGeneratorSnowflake.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/bee/openhis/utils/IdGeneratorSnowflake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/InventoryLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/InventoryLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/bee/openhis/service/PurchaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/MedicinesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/MedicinesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/ProducerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/ProducerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/ProviderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/ProviderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/PurchaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/PurchaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/bee/openhis/domain/PurchaseItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Medicines.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Medicines.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Provider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/PurchaseItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/PurchaseItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-mapper/target/classes/com/bee/openhis/mapper/MedicinesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-mapper/target/classes/com/bee/openhis/mapper/MedicinesMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/ErpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/ErpApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/InventoryLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/InventoryLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/MedicinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/MedicinesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProducerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProducerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProviderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/ProviderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/service/impl/PurchaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/ErpApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/ErpApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/MedicinesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/MedicinesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/ProducerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/ProducerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/ProviderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/ProviderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/PurchaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-sms/sms-service/src/main/java/com/bee/openhis/service/impl/VerificationCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-sms/sms-service/src/main/java/com/bee/openhis/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/MedcinesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/MedcinesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProducerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,8 +223,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ErpApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.SystemApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.SmsApplication" />
         <item itemvalue="Spring Boot.StatisticsApplication" />
       </list>
@@ -288,7 +287,10 @@
       <workItem from="1674214454471" duration="571000" />
       <workItem from="1674215067470" duration="3170000" />
       <workItem from="1674222139205" duration="547000" />
-      <workItem from="1674357786507" duration="2658000" />
+      <workItem from="1674357786507" duration="13495000" />
+      <workItem from="1674443798524" duration="1951000" />
+      <workItem from="1674462770709" duration="9547000" />
+      <workItem from="1674737253861" duration="7067000" />
     </task>
     <servers />
   </component>

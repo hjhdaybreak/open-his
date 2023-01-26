@@ -107,4 +107,34 @@ public class PurchaseItem extends BaseEntity implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+    public static final String COL_ITEM_ID = "item_id";
+
+    public static final String COL_PURCHASE_ID = "purchase_id";
+
+    public static final String COL_PURCHASE_NUMBER = "purchase_number";
+
+    public static final String COL_TRADE_PRICE = "trade_price";
+
+    public static final String COL_TRADE_TOTAL_AMOUNT = "trade_total_amount";
+
+    public static final String COL_BATCH_NUMBER = "batch_number";
+
+    public static final String COL_REMARK = "remark";
+
+    public static final String COL_MEDICINES_ID = "medicines_id";
+
+    public static final String COL_MEDICINES_NAME = "medicines_name";
+
+    public static final String COL_MEDICINES_TYPE = "medicines_type";
+
+    public static final String COL_PRESCRIPTION_TYPE = "prescription_type";
+
+    public static final String COL_PRODUCTER_ID = "producter_id";
+
+    public static final String COL_CONVERSION = "conversion";
+
+    public static final String COL_UNIT = "unit";
+
+    public static final String COL_KEYWORDS = "keywords";
 }

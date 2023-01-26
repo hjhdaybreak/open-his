@@ -13,7 +13,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @RestController
-@RequestMapping("erp/producter")
+@RequestMapping("erp/medicines")
 public class MedcinesController {
 
     @Reference

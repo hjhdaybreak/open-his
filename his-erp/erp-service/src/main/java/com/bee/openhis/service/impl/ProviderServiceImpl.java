@@ -12,8 +12,8 @@ import com.bee.openhis.mapper.ProviderMapper;
 import com.bee.openhis.service.ProviderService;
 import com.bee.openhis.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;

@@ -12,8 +12,8 @@ import com.bee.openhis.mapper.ProducerMapper;
 import com.bee.openhis.service.ProducerService;
 import com.bee.openhis.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
@@ -83,7 +83,7 @@ public class ProducerServiceImpl extends ServiceImpl<ProducerMapper, Producer>
 
     @Override
     public List<Producer> selectAllProducter() {
-        QueryWrapper<Producer> qw=new QueryWrapper<>();
+        QueryWrapper<Producer> qw = new QueryWrapper<>();
         qw.eq(Producer.COL_STATUS, Constants.STATUS_TRUE);
         return this.producerMapper.selectList(qw);
     }

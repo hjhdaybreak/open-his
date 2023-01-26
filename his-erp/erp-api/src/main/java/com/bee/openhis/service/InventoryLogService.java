@@ -2,6 +2,8 @@ package com.bee.openhis.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.bee.openhis.domain.InventoryLog;
+import com.bee.openhis.dto.InventoryLogDto;
+import com.bee.openhis.vo.DataGridView;
 
 /**
 * @author 19235
@@ -10,4 +12,5 @@ import com.bee.openhis.domain.InventoryLog;
 */
 public interface InventoryLogService extends IService<InventoryLog> {
 
+    DataGridView listInventoryLogForPage(InventoryLogDto inventoryLogDto);
 }

@@ -23,7 +23,7 @@ spring:
 
     sentinel:
       transport:
-        dashboard: 192.168.174.129:8888 # sentinel控制台
+        dashboard: 192.168.174.129:8078 # sentinel控制台
 
 #dubbo配置
 dubbo:

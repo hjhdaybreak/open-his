@@ -22,54 +22,59 @@ public class ProducerController {
 
     /**
      * 分页查询生产厂家
+     *
      * @param producerDto
      * @return
      */
     @GetMapping("listProducterForPage")
-    public AjaxResult listProducerForPage(ProducerDto producerDto){
+    public AjaxResult listProducerForPage(ProducerDto producerDto) {
         DataGridView dataGridView = producerService.listProducerForPage(producerDto);
-        return AjaxResult.success("查询成功",dataGridView.getData(),dataGridView.getTotal());
+        return AjaxResult.success("查询成功", dataGridView.getData(), dataGridView.getTotal());
     }
 
     /**
      * 添加厂家
+     *
      * @param producerDto
      * @return
      */
     @PostMapping("addProducter")
-    public AjaxResult addProducer(@Validated ProducerDto producerDto){
+    public AjaxResult addProducer(@Validated ProducerDto producerDto) {
         producerDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
         return AjaxResult.toAjax(producerService.addProducer(producerDto));
     }
 
     /**
      * 修改厂家
+     *
      * @param producerDto
      * @return
      */
     @PostMapping("updateProducter")
-    public AjaxResult updateProducer(@Validated ProducerDto producerDto){
+    public AjaxResult updateProducer(@Validated ProducerDto producerDto) {
         producerDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
         return AjaxResult.toAjax(producerService.updateProducer(producerDto));
     }
 
     /**
      * 根据厂家 id 查询
+     *
      * @param producerId
      * @return
      */
     @GetMapping("getProducterById/{producerId}")
-    public AjaxResult getProducerById(@PathVariable @Validated @NotNull(message = "厂家ID不能为空") Long producerId){
+    public AjaxResult getProducerById(@PathVariable @Validated @NotNull(message = "厂家ID不能为空") Long producerId) {
         return AjaxResult.success(producerService.getOne(producerId));
     }
 
     /**
      * 批量删除厂家
+     *
      * @param producerIds
      * @return
      */
     @DeleteMapping("deleteProducterByIds/{producerIds}")
-    public AjaxResult deleteProducterByIds(@PathVariable @Validated @NotEmpty(message = "要删除的id不能为空") Long[] producerIds){
+    public AjaxResult deleteProducterByIds(@PathVariable @Validated @NotEmpty(message = "要删除的id不能为空") Long[] producerIds) {
         return AjaxResult.toAjax(producerService.deleteProducterByIds(producerIds));
     }
 
