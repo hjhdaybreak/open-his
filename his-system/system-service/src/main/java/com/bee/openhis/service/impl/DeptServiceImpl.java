@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -71,6 +72,29 @@ public class DeptServiceImpl extends ServiceImpl<DeptMapper, Dept>
             return deptMapper.deleteBatchIds(ids);
         }
         return 0;
+    }
+
+    @Override
+    public List<Dept> listDeptByDeptIds(List<Long> deptIds) {
+        if(deptIds != null && deptIds.size() > 0){
+            QueryWrapper<Dept> wrapper = new QueryWrapper<>();
+            wrapper.in(Dept.COL_DEPT_ID,deptIds);
+            return deptMapper.selectList(wrapper);
+        }
+        return Collections.EMPTY_LIST;
+    }
+
+    @Override
+    public Dept getOne(Long deptId) {
+        return deptMapper.selectById(deptId);
+    }
+
+    @Override
+    public void updateDeptRegNumber(Long deptId, int i) {
+        Dept dept = new Dept();
+        dept.setDeptId(deptId);
+        dept.setRegNumber(i);
+        deptMapper.updateById(dept);
     }
 
 

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 
 
 @SpringBootApplication
-@MapperScan(basePackages = {"com.bee.op.enhis.mapper"})
+@MapperScan(basePackages = {"com.bee.openhis.mapper"})
 @EnableDubbo
 public class ErpApplication {
     public static void main(String[] args) {

@@ -5,6 +5,8 @@ import com.bee.openhis.domain.Dept;
 import com.bee.openhis.dto.DeptDto;
 import com.bee.openhis.vo.DataGridView;
 
+import java.util.List;
+
 /**
 * @author 19235
 * @description 针对表【sys_dept(部门/科室表)】的数据库操作Service
@@ -19,4 +21,10 @@ public interface DeptService extends IService<Dept> {
     int updateDept(DeptDto deptDto);
 
     int deleteDeptByIds(Long[] deptIds);
+
+    List<Dept> listDeptByDeptIds(List<Long> deptIds);
+
+    Dept getOne(Long deptId);
+
+    void updateDeptRegNumber(Long deptId, int i);
 }

@@ -17,7 +17,7 @@ public interface Constants {
     /**
      * 有效状态
      */
-    String STATUS_TRUE = "0";
+    String STATUS_TRUE = "0"; //0-正常用户
     String STATUS_FALSE = "1";
 
     /**
@@ -44,7 +44,7 @@ public interface Constants {
     /**
      * 排班状态
      */
-    String SCHEDULING_FLAG_TRUE = "0";
+    String SCHEDULING_FLAG_TRUE = "0"; //0-需要排班
     String SCHEDULING_FLAG_FALSE = "1";
     /**
      * 是否完善信息

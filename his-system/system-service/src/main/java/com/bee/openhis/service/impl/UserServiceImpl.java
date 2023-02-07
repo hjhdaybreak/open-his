@@ -15,8 +15,6 @@ import com.bee.openhis.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.Arrays;
 import java.util.List;
@@ -117,6 +115,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             user.setPassword(AppMd5Utils.md5(defaultPwd, user.getSalt(), 2));
             userMapper.updateById(user);
         }
+    }
+
+    @Override
+    public List<User> queryUsersNeedScheduling(Long userId, Long deptId) {
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.eq(deptId != null, User.COL_DEPT_ID, deptId);
+        wrapper.eq(userId != null, User.COL_USER_ID, userId);
+        wrapper.eq(User.COL_SCHEDULING_FLAG, Constants.SCHEDULING_FLAG_TRUE);    //0-需要排班
+        wrapper.eq(User.COL_STATUS, Constants.STATUS_TRUE);  //0-正常用户
+        return userMapper.selectList(wrapper);
     }
 
 }

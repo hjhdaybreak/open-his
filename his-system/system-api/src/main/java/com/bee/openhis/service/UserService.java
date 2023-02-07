@@ -27,4 +27,6 @@ public interface UserService extends IService<User> {
     List<User> getAllUsers();
 
     void resetPassword(Long[] userIds);
+
+    List<User> queryUsersNeedScheduling(Long userId,Long deptId);
 }
