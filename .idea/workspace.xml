@@ -5,96 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="895ff10c-e118-44e0-acce-ffa9a59db8f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/utils/HisDateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CareHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CareOrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CareOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CheckResultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/OrderBackfeeItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/OrderBackfeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/OrderChargeItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/OrderChargeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/PatientFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/RegistrationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/SchedulingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/CareHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/CareOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/CareOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/CheckResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/OrderBackfee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/OrderBackfeeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/OrderCharge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/OrderChargeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/PatientFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/domain/Scheduling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/PatientDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/RegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/RegistrationFormDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/RegistrationQueryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/SchedulingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/SchedulingFormDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/SchedulingQueryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/CareHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/CareOrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/CareOrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/CheckResultMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/OrderBackfeeItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/OrderBackfeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/OrderChargeItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/OrderChargeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/PatientFileMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/PatientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/RegistrationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/bee/openhis/mapper/SchedulingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CheckResultMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/OrderBackfeeItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/OrderBackfeeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/OrderChargeItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/OrderChargeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/PatientFileMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/PatientMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/RegistrationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/SchedulingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CareHistoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CareOrderItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CareOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CheckResultServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/OrderBackfeeItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/OrderBackfeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/OrderChargeItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/OrderChargeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/PatientFileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/PatientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/RegistrationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/SchedulingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/CareController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/SchedulingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/bee/openhis/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/DoctorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/DoctorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/InventoryLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/InventoryLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/bee/openhis/service/PurchaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/InventoryLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-domain/target/classes/com/bee/openhis/domain/InventoryLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/ErpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/bee/openhis/ErpApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/InventoryLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/InventoryLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/bee/openhis/service/impl/PurchaseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/bee/openhis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/DeptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/bee/openhis/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/bee/openhis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/DeptServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/bee/openhis/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/erp/ProducerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/erp/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/bee/openhis/controller/erp/PurchaseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/CareHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/CareOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/CareOrderFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/bee/openhis/dto/CareOrderItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CareHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/bee/openhis/service/CareHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CareHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/bee/openhis/impl/CareHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/CareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/CareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/bee/openhis/controller/doctor/RegistrationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,8 +96,8 @@
       <recent name="G:\open-his\his-doctor\doctor-domain\src\main\java\com\bee\openhis\domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bee.openhis.utils" />
       <recent name="com.bee.openhis.dto" />
+      <recent name="com.bee.openhis.utils" />
       <recent name="com.bee.openhis.service" />
       <recent name="com.bee.openhis.controller.erp" />
       <recent name="com.bee.openhis.service.impl" />
@@ -351,7 +269,8 @@
       <workItem from="1675672387088" duration="7494000" />
       <workItem from="1675747761939" duration="9912000" />
       <workItem from="1675761589942" duration="274000" />
-      <workItem from="1675766054733" duration="8515000" />
+      <workItem from="1675766054733" duration="8832000" />
+      <workItem from="1675860493237" duration="6155000" />
     </task>
     <servers />
   </component>
